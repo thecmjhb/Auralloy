@@ -1,0 +1,19 @@
+{
+  "seed": 20261101,
+  "analysis": {
+    "songs": 96, "analysed": 96,
+    "tempo_within_0.5pct": 0.9375, "tempo_octave_equivalent": 0.9583, "tempo_err_pct_mean": 2.9561,
+    "key_exact": 0.9896, "key_relative": 0.0000, "key_fifth": 0.0104, "key_exact_or_relative": 0.9896,
+    "downbeat_within_50ms": 0.8542, "downbeat_err_ms_median": 2.77, "downbeat_err_ms_p90": 367.77,
+    "boundary_precision": 0.7881, "boundary_recall": 0.6458, "boundary_f1": 0.7099,
+    "analysis_seconds_mean": 0.187
+  },
+  "stems": { "mixes": 16, "si_sdr_vocals_db_mean": 21.85, "si_sdr_vocals_db_sd": 4.55, "si_sdr_drums_db_mean": -0.31, "si_sdr_drums_db_sd": 0.67, "si_sdr_bass_db_mean": 6.94, "si_sdr_bass_db_sd": 0.71, "reconstruction_db_mean": -147.2, "seconds_per_audio_minute": 2.62 },
+  "mashups": {
+    "trials": 45, "planned": 45, "rule_compliance": 1.0000,
+    "plan_ms_mean": 0.07, "render_seconds_per_audio_minute": 1.30,
+    "rendered_tempo_err_bpm_mean": 0.0102, "rendered_tempo_err_bpm_max": 0.0357,
+    "tempo_sd_across_windows_auralloy": 0.0464, "tempo_sd_across_windows_baseline": 3.0659,
+    "key_agreement_auralloy": 0.8278, "key_agreement_baseline": 0.3750
+  }
+}

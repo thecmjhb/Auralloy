@@ -1,0 +1,80 @@
+{
+  "name": "English",
+  "dir": "ltr",
+  "tagline": "Two songs in, one alloy out.",
+  "subtitle": "An open-source desktop studio for rule-based auto-mashups, slowed + reverb and lofi, with a real timeline editor.",
+  "h_demo": "See it in action",
+  "h_what": "What it does",
+  "h_how": "How it works",
+  "h_start": "Get started",
+  "h_rules": "The mashup rules",
+  "h_tour": "Dashboard tour",
+  "h_bench": "Benchmarks",
+  "h_limits": "Honest limitations",
+  "h_paper": "Research paper",
+  "h_license": "License",
+  "demo_caption": "Intro, import, automatic analysis, Forge, a sequential mix, one-click Slowed + Reverb, export.",
+  "f_t": [
+    "Forge: automatic mashups",
+    "Explainable by design",
+    "Studio: a real editor",
+    "Slowed + reverb and lofi",
+    "High-quality export",
+    "Open and tested"
+  ],
+  "f_d": [
+    "Pick two or more songs. Auralloy matches tempo and key, then plays them one after another, beat-matched, with a smooth blend at every switch.",
+    "Every decision follows a written rule and is logged in plain language. No black box.",
+    "Multi-track timeline with snapping, split, trim, fades, reverse, per-clip gain, tempo and pitch, loop regions and unlimited undo.",
+    "One-click looks and a full effects rack: EQ, lofi tape, compressor, chorus, echo, reverb, width, rain and vinyl.",
+    "WAV 16/24/32-bit float, FLAC and MP3 at 44.1 to 96 kHz, processed in 32-bit float.",
+    "AGPL-3.0, headless tests, a seeded benchmark suite and a research preprint."
+  ],
+  "how": [
+    "Analyse tempo, beats, bars, key and sections.",
+    "Split stems: vocals, drums, bass, other.",
+    "Plan the arrangement with the mashup rules and write the log.",
+    "Render every clip with matched tempo and pitch.",
+    "Edit: everything is an ordinary clip on the timeline."
+  ],
+  "start": [
+    "Download <b>Auralloy-0.0.1-windows-x64.zip</b> from Releases and run <code>Auralloy.exe</code>.",
+    "Drop two or more songs into the window.",
+    "Open <b>Forge</b> and press the orb: the songs play one after another.",
+    "Edit on the timeline, pick a look, then <b>Export</b>."
+  ],
+  "rules_intro": "Forge follows explicit rules and writes a plain-language log of every decision.",
+  "rules": [
+    "One shared tempo, with the least time-stretching.",
+    "One shared key (A minor equals C major), with the smallest pitch shift.",
+    "Every cut on a downbeat, in 4-bar phrases.",
+    "One vocal and one bass at a time; the bass swaps on a bar line.",
+    "Sections matched by energy; blends of 2 to 8 bars.",
+    "Every song keeps its own balance and is level-matched."
+  ],
+  "tour": [
+    "Studio: song ribbon, role lanes, effects rack.",
+    "Forge: decks, compatibility matrix and the plan.",
+    "Export: WAV, FLAC, MP3, normalise, dither."
+  ],
+  "bench_intro": "Seeded, synthetic and reproducible (see benchmarks/). Real music will be messier.",
+  "bench_labels": [
+    "Tempo within 0.5 %",
+    "Key exact or relative",
+    "Downbeat within 50 ms",
+    "Section boundaries (F1)",
+    "Rule compliance",
+    "Rendered tempo error",
+    "Tempo drift vs naive crossfade"
+  ],
+  "limits": [
+    "Assumes a mostly steady 4/4 tempo.",
+    "Quick Stems is classic DSP, not a neural separator.",
+    "Key detection can be wrong on ambiguous harmony.",
+    "Validated on synthetic songs; real music needs more testing."
+  ],
+  "paper": "A research preprint describing the method and its evaluation is prepared for Zenodo. It has not been peer reviewed.",
+  "license": "AGPL-3.0 (built on JUCE).",
+  "rights": "Auralloy is a tool: you are responsible for the rights to the audio you import.",
+  "more": "Build instructions, shortcuts and technical docs are in the English README."
+}

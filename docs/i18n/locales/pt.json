@@ -1,0 +1,80 @@
+{
+  "name": "Português",
+  "dir": "ltr",
+  "tagline": "Duas músicas entram, uma liga sai.",
+  "subtitle": "Um estúdio desktop de código aberto para mashups automáticos baseados em regras, slowed + reverb e lofi, com um editor de linha do tempo de verdade.",
+  "h_demo": "Veja em ação",
+  "h_what": "O que faz",
+  "h_how": "Como funciona",
+  "h_start": "Começar",
+  "h_rules": "As regras do mashup",
+  "h_tour": "Tour pelo painel",
+  "h_bench": "Benchmarks",
+  "h_limits": "Limitações, com honestidade",
+  "h_paper": "Artigo de pesquisa",
+  "h_license": "Licença",
+  "demo_caption": "Intro, importação, análise automática, Forge, uma mixagem sequencial, Slowed + Reverb com um clique, exportação.",
+  "f_t": [
+    "Forge: mashups automáticos",
+    "Explicável por projeto",
+    "Studio: um editor de verdade",
+    "Slowed + reverb e lofi",
+    "Exportação de alta qualidade",
+    "Aberto e testado"
+  ],
+  "f_d": [
+    "Escolha duas ou mais músicas. O Auralloy iguala andamento e tom e as toca uma após a outra, no ritmo, com uma transição suave a cada troca.",
+    "Cada decisão segue uma regra escrita e é registrada em linguagem simples. Sem caixa-preta.",
+    "Linha do tempo multipista com ímã, dividir, aparar, fades, reverter, ganho por clipe, andamento e tom, regiões em loop e desfazer ilimitado.",
+    "Looks em um clique e um rack completo: EQ, fita lofi, compressor, chorus, eco, reverb, largura, chuva e vinil.",
+    "WAV 16/24/32 bits float, FLAC e MP3 de 44,1 a 96 kHz, processados em 32 bits float.",
+    "AGPL-3.0, testes sem interface, benchmarks com semente e um preprint de pesquisa."
+  ],
+  "how": [
+    "Analisa andamento, batidas, compassos, tom e seções.",
+    "Separa stems: voz, bateria, baixo, outros.",
+    "Planeja o arranjo com as regras e escreve o registro.",
+    "Renderiza cada clipe com andamento e tom igualados.",
+    "Edite: tudo é um clipe comum na linha do tempo."
+  ],
+  "start": [
+    "Baixe <b>Auralloy-0.0.1-windows-x64.zip</b> em Releases e execute <code>Auralloy.exe</code>.",
+    "Arraste duas ou mais músicas para a janela.",
+    "Abra o <b>Forge</b> e clique na esfera: as músicas tocam uma após a outra.",
+    "Edite na linha do tempo, escolha um look e <b>Exporte</b>."
+  ],
+  "rules_intro": "O Forge segue regras explícitas e escreve um registro em linguagem simples de cada decisão.",
+  "rules": [
+    "Um andamento comum, com o mínimo de esticamento de tempo.",
+    "Um tom comum (Lá menor equivale a Dó maior), com o menor deslocamento de tom.",
+    "Cada corte em um tempo forte, em frases de 4 compassos.",
+    "Uma voz e um baixo por vez; o baixo troca em uma linha de compasso.",
+    "Seções combinadas por energia; transições de 2 a 8 compassos.",
+    "Cada música mantém seu equilíbrio e o nível é igualado."
+  ],
+  "tour": [
+    "Studio: faixa de músicas, pistas por função, rack de efeitos.",
+    "Forge: decks, matriz de compatibilidade e o plano.",
+    "Exportar: WAV, FLAC, MP3, normalizar, dither."
+  ],
+  "bench_intro": "Com semente, sintético e reproduzível (veja benchmarks/). Música real será mais complexa.",
+  "bench_labels": [
+    "Andamento dentro de 0,5 %",
+    "Tom exato ou relativo",
+    "Tempo forte dentro de 50 ms",
+    "Limites de seção (F1)",
+    "Cumprimento das regras",
+    "Erro de andamento renderizado",
+    "Deriva de andamento vs crossfade simples"
+  ],
+  "limits": [
+    "Assume um andamento 4/4 razoavelmente estável.",
+    "Quick Stems é DSP clássico, não um separador neural.",
+    "A detecção de tom pode errar com harmonia ambígua.",
+    "Validado em músicas sintéticas; música real precisa de mais testes."
+  ],
+  "paper": "Um preprint de pesquisa que descreve o método e sua avaliação está preparado para o Zenodo. Não foi revisado por pares.",
+  "license": "AGPL-3.0 (construído sobre o JUCE).",
+  "rights": "O Auralloy é uma ferramenta: você é responsável pelos direitos do áudio que importa.",
+  "more": "Instruções de compilação, atalhos e documentação técnica estão no README em inglês."
+}

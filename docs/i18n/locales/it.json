@@ -1,0 +1,80 @@
+{
+  "name": "Italiano",
+  "dir": "ltr",
+  "tagline": "Due brani entrano, una lega esce.",
+  "subtitle": "Uno studio desktop open source per mashup automatici basati su regole, slowed + reverb e lofi, con un vero editor di timeline.",
+  "h_demo": "Guardalo in azione",
+  "h_what": "Cosa fa",
+  "h_how": "Come funziona",
+  "h_start": "Per iniziare",
+  "h_rules": "Le regole del mashup",
+  "h_tour": "Tour del pannello",
+  "h_bench": "Benchmark",
+  "h_limits": "Limiti, con onestà",
+  "h_paper": "Articolo di ricerca",
+  "h_license": "Licenza",
+  "demo_caption": "Intro, importazione, analisi automatica, Forge, un mix sequenziale, Slowed + Reverb con un clic, esportazione.",
+  "f_t": [
+    "Forge: mashup automatici",
+    "Spiegabile per progetto",
+    "Studio: un vero editor",
+    "Slowed + reverb e lofi",
+    "Esportazione di alta qualità",
+    "Aperto e testato"
+  ],
+  "f_d": [
+    "Scegli due o più brani. Auralloy allinea tempo e tonalità e li riproduce uno dopo l'altro, a tempo, con una transizione morbida a ogni cambio.",
+    "Ogni decisione segue una regola scritta ed è registrata in linguaggio semplice. Nessuna scatola nera.",
+    "Timeline multitraccia con snap, taglio, rifilatura, dissolvenze, inversione, guadagno per clip, tempo e intonazione, regioni in loop e annulla illimitato.",
+    "Look con un clic e un rack di effetti completo: EQ, nastro lofi, compressore, chorus, eco, riverbero, larghezza, pioggia e vinile.",
+    "WAV 16/24/32 bit float, FLAC e MP3 da 44,1 a 96 kHz, elaborati in 32 bit float.",
+    "AGPL-3.0, test senza interfaccia, suite di benchmark con seed fisso e un preprint di ricerca."
+  ],
+  "how": [
+    "Analizza tempo, battiti, battute, tonalità e sezioni.",
+    "Separa gli stem: voce, batteria, basso, altro.",
+    "Pianifica l'arrangiamento con le regole e scrive il registro.",
+    "Renderizza ogni clip con tempo e intonazione allineati.",
+    "Modifica: tutto è una clip normale sulla timeline."
+  ],
+  "start": [
+    "Scarica <b>Auralloy-0.0.1-windows-x64.zip</b> da Releases ed esegui <code>Auralloy.exe</code>.",
+    "Trascina due o più brani nella finestra.",
+    "Apri <b>Forge</b> e premi la sfera: i brani suonano uno dopo l'altro.",
+    "Modifica sulla timeline, scegli un look ed <b>esporta</b>."
+  ],
+  "rules_intro": "Forge segue regole esplicite e scrive un registro in linguaggio semplice di ogni decisione.",
+  "rules": [
+    "Un tempo comune, con il minimo stiramento temporale.",
+    "Una tonalità comune (la minore equivale a do maggiore), con il minimo spostamento di intonazione.",
+    "Ogni taglio sul primo movimento, in frasi di 4 battute.",
+    "Una sola voce e un solo basso alla volta; il basso cambia sulla linea di battuta.",
+    "Sezioni abbinate per energia; transizioni da 2 a 8 battute.",
+    "Ogni brano mantiene il proprio equilibrio e i livelli sono allineati."
+  ],
+  "tour": [
+    "Studio: nastro dei brani, corsie per ruolo, rack di effetti.",
+    "Forge: deck, matrice di compatibilità e piano.",
+    "Esporta: WAV, FLAC, MP3, normalizzazione, dither."
+  ],
+  "bench_intro": "Con seed fisso, sintetico e riproducibile (vedi benchmarks/). La musica reale sarà più complessa.",
+  "bench_labels": [
+    "Tempo entro lo 0,5 %",
+    "Tonalità esatta o relativa",
+    "Primo movimento entro 50 ms",
+    "Confini di sezione (F1)",
+    "Rispetto delle regole",
+    "Errore di tempo dopo il render",
+    "Deriva di tempo rispetto a un crossfade semplice"
+  ],
+  "limits": [
+    "Presuppone un tempo 4/4 abbastanza stabile.",
+    "Quick Stems è DSP classico, non un separatore neurale.",
+    "Il rilevamento della tonalità può sbagliare con armonie ambigue.",
+    "Validato su brani sintetici; la musica reale richiede più test."
+  ],
+  "paper": "Un preprint di ricerca che descrive il metodo e la valutazione è pronto per Zenodo. Non è stato sottoposto a revisione paritaria.",
+  "license": "AGPL-3.0 (costruito su JUCE).",
+  "rights": "Auralloy è uno strumento: sei responsabile dei diritti sull'audio che importi.",
+  "more": "Istruzioni di compilazione, scorciatoie e documentazione tecnica sono nel README in inglese."
+}

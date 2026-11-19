@@ -1,0 +1,80 @@
+{
+  "name": "Deutsch",
+  "dir": "ltr",
+  "tagline": "Zwei Songs rein, eine Legierung raus.",
+  "subtitle": "Ein quelloffenes Desktop-Studio für regelbasierte automatische Mashups, Slowed + Reverb und Lofi, mit einem echten Timeline-Editor.",
+  "h_demo": "In Aktion sehen",
+  "h_what": "Was es kann",
+  "h_how": "So funktioniert es",
+  "h_start": "Loslegen",
+  "h_rules": "Die Mashup-Regeln",
+  "h_tour": "Rundgang durch das Dashboard",
+  "h_bench": "Benchmarks",
+  "h_limits": "Ehrliche Einschränkungen",
+  "h_paper": "Forschungsartikel",
+  "h_license": "Lizenz",
+  "demo_caption": "Intro, Import, automatische Analyse, Forge, ein sequenzieller Mix, Slowed + Reverb per Klick, Export.",
+  "f_t": [
+    "Forge: automatische Mashups",
+    "Erklärbar von Grund auf",
+    "Studio: ein echter Editor",
+    "Slowed + Reverb und Lofi",
+    "Export in hoher Qualität",
+    "Offen und getestet"
+  ],
+  "f_d": [
+    "Wähle zwei oder mehr Songs. Auralloy gleicht Tempo und Tonart an und spielt sie nacheinander, beatgenau, mit weichem Übergang bei jedem Wechsel.",
+    "Jede Entscheidung folgt einer schriftlichen Regel und wird in verständlicher Sprache protokolliert. Keine Blackbox.",
+    "Mehrspur-Timeline mit Einrasten, Teilen, Trimmen, Fades, Umkehren, Gain pro Clip, Tempo und Tonhöhe, Loop-Bereichen und unbegrenztem Rückgängig.",
+    "Looks per Klick und ein vollständiges Effekt-Rack: EQ, Lofi-Tape, Kompressor, Chorus, Echo, Hall, Breite, Regen und Vinyl.",
+    "WAV 16/24/32 Bit Float, FLAC und MP3 mit 44,1 bis 96 kHz, verarbeitet in 32 Bit Float.",
+    "AGPL-3.0, Headless-Tests, Benchmark-Suite mit festem Seed und ein Forschungs-Preprint."
+  ],
+  "how": [
+    "Tempo, Beats, Takte, Tonart und Abschnitte analysieren.",
+    "Stems trennen: Gesang, Drums, Bass, Rest.",
+    "Arrangement nach den Mashup-Regeln planen und Protokoll schreiben.",
+    "Jeden Clip mit angeglichenem Tempo und Tonhöhe rendern.",
+    "Bearbeiten: alles sind gewöhnliche Clips auf der Timeline."
+  ],
+  "start": [
+    "<b>Auralloy-0.0.1-windows-x64.zip</b> aus den Releases laden und <code>Auralloy.exe</code> starten.",
+    "Zwei oder mehr Songs ins Fenster ziehen.",
+    "<b>Forge</b> öffnen und die Kugel drücken: Die Songs spielen nacheinander.",
+    "Auf der Timeline bearbeiten, einen Look wählen und <b>exportieren</b>."
+  ],
+  "rules_intro": "Forge folgt ausdrücklichen Regeln und schreibt ein verständliches Protokoll jeder Entscheidung.",
+  "rules": [
+    "Ein gemeinsames Tempo bei möglichst wenig Zeitdehnung.",
+    "Eine gemeinsame Tonart (a-Moll entspricht C-Dur) bei kleinstmöglicher Tonhöhenverschiebung.",
+    "Jeder Schnitt auf der Eins, in 4-Takt-Phrasen.",
+    "Immer nur ein Gesang und ein Bass; der Bass wechselt an der Taktlinie.",
+    "Abschnitte nach Energie gepaart; Übergänge von 2 bis 8 Takten.",
+    "Jeder Song behält seine Balance, die Lautheit wird angeglichen."
+  ],
+  "tour": [
+    "Studio: Song-Band, Rollenspuren, Effekt-Rack.",
+    "Forge: Decks, Kompatibilitätsmatrix und der Plan.",
+    "Export: WAV, FLAC, MP3, Normalisieren, Dither."
+  ],
+  "bench_intro": "Mit festem Seed, synthetisch und reproduzierbar (siehe benchmarks/). Echte Musik wird unordentlicher sein.",
+  "bench_labels": [
+    "Tempo innerhalb 0,5 %",
+    "Tonart exakt oder parallel",
+    "Eins innerhalb 50 ms",
+    "Abschnittsgrenzen (F1)",
+    "Regeleinhaltung",
+    "Tempofehler nach dem Rendern",
+    "Tempo-Drift gegenüber naivem Crossfade"
+  ],
+  "limits": [
+    "Setzt ein weitgehend stabiles 4/4-Tempo voraus.",
+    "Quick Stems ist klassisches DSP, kein neuronaler Separator.",
+    "Die Tonarterkennung kann bei mehrdeutiger Harmonik irren.",
+    "An synthetischen Songs validiert; echte Musik braucht mehr Tests."
+  ],
+  "paper": "Ein Forschungs-Preprint zu Methode und Evaluation ist für Zenodo vorbereitet. Er wurde nicht begutachtet.",
+  "license": "AGPL-3.0 (auf JUCE aufgebaut).",
+  "rights": "Auralloy ist ein Werkzeug: Für die Rechte am importierten Audio sind Sie selbst verantwortlich.",
+  "more": "Build-Anleitung, Tastenkürzel und technische Dokumentation stehen im englischen README."
+}

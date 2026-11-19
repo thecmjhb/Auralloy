@@ -1,0 +1,80 @@
+{
+  "name": "Español",
+  "dir": "ltr",
+  "tagline": "Dos canciones entran, una aleación sale.",
+  "subtitle": "Un estudio de escritorio de código abierto para mashups automáticos basados en reglas, slowed + reverb y lofi, con un editor de línea de tiempo real.",
+  "h_demo": "Míralo en acción",
+  "h_what": "Qué hace",
+  "h_how": "Cómo funciona",
+  "h_start": "Primeros pasos",
+  "h_rules": "Las reglas del mashup",
+  "h_tour": "Recorrido por el panel",
+  "h_bench": "Benchmarks",
+  "h_limits": "Limitaciones, con honestidad",
+  "h_paper": "Artículo de investigación",
+  "h_license": "Licencia",
+  "demo_caption": "Intro, importación, análisis automático, Forge, una mezcla secuencial, Slowed + Reverb con un clic, exportación.",
+  "f_t": [
+    "Forge: mashups automáticos",
+    "Explicable por diseño",
+    "Studio: un editor de verdad",
+    "Slowed + reverb y lofi",
+    "Exportación de alta calidad",
+    "Abierto y probado"
+  ],
+  "f_d": [
+    "Elige dos o más canciones. Auralloy iguala tempo y tonalidad y las reproduce una tras otra, al ritmo, con una transición suave en cada cambio.",
+    "Cada decisión sigue una regla escrita y se registra en lenguaje claro. Sin cajas negras.",
+    "Línea de tiempo multipista con imán, cortar, recortar, fundidos, invertir, ganancia por clip, tempo y tono, regiones en bucle y deshacer ilimitado.",
+    "Looks con un clic y un rack completo: EQ, cinta lofi, compresor, chorus, eco, reverb, anchura, lluvia y vinilo.",
+    "WAV 16/24/32 bits float, FLAC y MP3 de 44,1 a 96 kHz, procesado en 32 bits float.",
+    "AGPL-3.0, pruebas sin interfaz, benchmarks con semilla y un preprint de investigación."
+  ],
+  "how": [
+    "Analiza tempo, pulsos, compases, tonalidad y secciones.",
+    "Separa stems: voz, batería, bajo, otros.",
+    "Planifica el arreglo con las reglas y escribe el registro.",
+    "Renderiza cada clip con tempo y tono igualados.",
+    "Edita: todo es un clip normal en la línea de tiempo."
+  ],
+  "start": [
+    "Descarga <b>Auralloy-0.0.1-windows-x64.zip</b> desde Releases y ejecuta <code>Auralloy.exe</code>.",
+    "Arrastra dos o más canciones a la ventana.",
+    "Abre <b>Forge</b> y pulsa la esfera: las canciones suenan una tras otra.",
+    "Edita en la línea de tiempo, elige un look y <b>Exporta</b>."
+  ],
+  "rules_intro": "Forge sigue reglas explícitas y escribe un registro en lenguaje claro de cada decisión.",
+  "rules": [
+    "Un tempo común, con el mínimo estiramiento temporal.",
+    "Una tonalidad común (La menor equivale a Do mayor), con el mínimo cambio de tono.",
+    "Cada corte en un tiempo fuerte, en frases de 4 compases.",
+    "Una voz y un bajo a la vez; el bajo cambia en una línea de compás.",
+    "Secciones emparejadas por energía; transiciones de 2 a 8 compases.",
+    "Cada canción conserva su propio equilibrio y se iguala el nivel."
+  ],
+  "tour": [
+    "Studio: cinta de canciones, carriles por rol, rack de efectos.",
+    "Forge: decks, matriz de compatibilidad y el plan.",
+    "Exportar: WAV, FLAC, MP3, normalizar, dither."
+  ],
+  "bench_intro": "Con semilla, sintético y reproducible (ver benchmarks/). La música real será más compleja.",
+  "bench_labels": [
+    "Tempo dentro del 0,5 %",
+    "Tonalidad exacta o relativa",
+    "Tiempo fuerte dentro de 50 ms",
+    "Límites de sección (F1)",
+    "Cumplimiento de reglas",
+    "Error de tempo renderizado",
+    "Deriva de tempo frente a crossfade simple"
+  ],
+  "limits": [
+    "Supone un tempo 4/4 bastante estable.",
+    "Quick Stems es DSP clásico, no un separador neuronal.",
+    "La detección de tonalidad puede fallar con armonía ambigua.",
+    "Validado con canciones sintéticas; la música real necesita más pruebas."
+  ],
+  "paper": "Un preprint de investigación que describe el método y su evaluación está preparado para Zenodo. No ha sido revisado por pares.",
+  "license": "AGPL-3.0 (construido sobre JUCE).",
+  "rights": "Auralloy es una herramienta: eres responsable de los derechos del audio que importas.",
+  "more": "Las instrucciones de compilación, los atajos y la documentación técnica están en el README en inglés."
+}

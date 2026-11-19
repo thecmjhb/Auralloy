@@ -1,0 +1,80 @@
+{
+  "name": "Bahasa Indonesia",
+  "dir": "ltr",
+  "tagline": "Dua lagu masuk, satu paduan keluar.",
+  "subtitle": "Studio desktop sumber terbuka untuk mashup otomatis berbasis aturan, slowed + reverb, dan lofi, lengkap dengan editor timeline sungguhan.",
+  "h_demo": "Lihat cara kerjanya",
+  "h_what": "Fungsinya",
+  "h_how": "Cara kerja",
+  "h_start": "Mulai",
+  "h_rules": "Aturan mashup",
+  "h_tour": "Tur dasbor",
+  "h_bench": "Benchmark",
+  "h_limits": "Keterbatasan secara jujur",
+  "h_paper": "Makalah penelitian",
+  "h_license": "Lisensi",
+  "demo_caption": "Intro, impor, analisis otomatis, Forge, mix berurutan, Slowed + Reverb sekali klik, ekspor.",
+  "f_t": [
+    "Forge: mashup otomatis",
+    "Dapat dijelaskan",
+    "Studio: editor sungguhan",
+    "Slowed + reverb dan lofi",
+    "Ekspor berkualitas tinggi",
+    "Terbuka dan teruji"
+  ],
+  "f_d": [
+    "Pilih dua lagu atau lebih. Auralloy menyamakan tempo dan nada dasar, lalu memutarnya satu per satu, sinkron beat, dengan transisi halus di setiap pergantian.",
+    "Setiap keputusan mengikuti aturan tertulis dan dicatat dengan bahasa sederhana. Tanpa kotak hitam.",
+    "Timeline multitrack dengan snap, potong, trim, fade, balik, gain per klip, tempo dan pitch, region loop, serta undo tanpa batas.",
+    "Tampilan sekali klik dan rak efek lengkap: EQ, pita lofi, kompresor, chorus, echo, reverb, lebar stereo, hujan, dan vinil.",
+    "WAV 16/24/32-bit float, FLAC, dan MP3 pada 44,1 hingga 96 kHz, diproses 32-bit float.",
+    "AGPL-3.0, uji tanpa antarmuka, suite benchmark ber-seed, dan preprint penelitian."
+  ],
+  "how": [
+    "Analisis tempo, beat, birama, nada dasar, dan bagian lagu.",
+    "Pisahkan stem: vokal, drum, bas, lainnya.",
+    "Susun aransemen dengan aturan mashup dan tulis lognya.",
+    "Render tiap klip dengan tempo dan pitch yang disamakan.",
+    "Edit: semuanya klip biasa di timeline."
+  ],
+  "start": [
+    "Unduh <b>Auralloy-0.0.1-windows-x64.zip</b> dari Releases lalu jalankan <code>Auralloy.exe</code>.",
+    "Seret dua lagu atau lebih ke jendela.",
+    "Buka <b>Forge</b> dan tekan bola: lagu diputar satu demi satu.",
+    "Edit di timeline, pilih tampilan, lalu <b>Ekspor</b>."
+  ],
+  "rules_intro": "Forge mengikuti aturan yang jelas dan menulis log berbahasa sederhana untuk setiap keputusan.",
+  "rules": [
+    "Satu tempo bersama, dengan peregangan waktu sekecil mungkin.",
+    "Satu nada dasar bersama (A minor sama dengan C major), dengan pergeseran pitch terkecil.",
+    "Setiap potongan jatuh di ketukan kuat, dalam frasa 4 birama.",
+    "Satu vokal dan satu bas pada satu waktu; bas bertukar di garis birama.",
+    "Bagian dicocokkan berdasarkan energi; transisi 2 hingga 8 birama.",
+    "Setiap lagu menjaga keseimbangannya sendiri dan levelnya disamakan."
+  ],
+  "tour": [
+    "Studio: pita lagu, lajur peran, rak efek.",
+    "Forge: deck, matriks kecocokan, dan rencana.",
+    "Ekspor: WAV, FLAC, MP3, normalisasi, dither."
+  ],
+  "bench_intro": "Ber-seed, sintetis, dan dapat direproduksi (lihat benchmarks/). Musik asli akan lebih rumit.",
+  "bench_labels": [
+    "Tempo dalam 0,5 %",
+    "Nada dasar tepat atau relatif",
+    "Ketukan kuat dalam 50 ms",
+    "Batas bagian (F1)",
+    "Kepatuhan aturan",
+    "Galat tempo hasil render",
+    "Drift tempo vs crossfade sederhana"
+  ],
+  "limits": [
+    "Mengasumsikan tempo 4/4 yang cukup stabil.",
+    "Quick Stems adalah DSP klasik, bukan pemisah neural.",
+    "Deteksi nada dasar bisa keliru pada harmoni yang ambigu.",
+    "Divalidasi pada lagu sintetis; musik asli perlu pengujian lebih lanjut."
+  ],
+  "paper": "Preprint penelitian yang menjelaskan metode dan evaluasinya disiapkan untuk Zenodo. Belum ditinjau sejawat.",
+  "license": "AGPL-3.0 (dibangun di atas JUCE).",
+  "rights": "Auralloy adalah alat: Anda bertanggung jawab atas hak audio yang Anda impor.",
+  "more": "Petunjuk build, pintasan, dan dokumentasi teknis ada di README bahasa Inggris."
+}

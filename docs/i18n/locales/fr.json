@@ -1,0 +1,80 @@
+{
+  "name": "Français",
+  "dir": "ltr",
+  "tagline": "Deux morceaux entrent, un alliage sort.",
+  "subtitle": "Un studio de bureau open source pour des mashups automatiques basés sur des règles, du slowed + reverb et du lofi, avec un vrai éditeur de timeline.",
+  "h_demo": "Voir en action",
+  "h_what": "Ce que ça fait",
+  "h_how": "Comment ça marche",
+  "h_start": "Démarrer",
+  "h_rules": "Les règles du mashup",
+  "h_tour": "Visite du tableau de bord",
+  "h_bench": "Benchmarks",
+  "h_limits": "Limites, en toute honnêteté",
+  "h_paper": "Article de recherche",
+  "h_license": "Licence",
+  "demo_caption": "Intro, import, analyse automatique, Forge, un mix séquentiel, Slowed + Reverb en un clic, export.",
+  "f_t": [
+    "Forge : mashups automatiques",
+    "Explicable par conception",
+    "Studio : un vrai éditeur",
+    "Slowed + reverb et lofi",
+    "Export de haute qualité",
+    "Ouvert et testé"
+  ],
+  "f_d": [
+    "Choisissez deux morceaux ou plus. Auralloy accorde tempo et tonalité puis les enchaîne, calés sur le beat, avec un fondu fluide à chaque transition.",
+    "Chaque décision suit une règle écrite et est consignée en langage clair. Pas de boîte noire.",
+    "Timeline multipiste avec aimantation, découpe, rognage, fondus, inversion, gain par clip, tempo et hauteur, régions en boucle et annulation illimitée.",
+    "Looks en un clic et rack d'effets complet : EQ, bande lofi, compresseur, chorus, écho, réverbération, largeur, pluie et vinyle.",
+    "WAV 16/24/32 bits flottant, FLAC et MP3 de 44,1 à 96 kHz, traités en 32 bits flottant.",
+    "AGPL-3.0, tests sans interface, suite de benchmarks à graine fixe et un preprint de recherche."
+  ],
+  "how": [
+    "Analyse du tempo, des temps, des mesures, de la tonalité et des sections.",
+    "Séparation des stems : voix, batterie, basse, autres.",
+    "Planification de l'arrangement avec les règles et écriture du journal.",
+    "Rendu de chaque clip avec tempo et hauteur accordés.",
+    "Édition : tout est un clip ordinaire sur la timeline."
+  ],
+  "start": [
+    "Téléchargez <b>Auralloy-0.0.1-windows-x64.zip</b> depuis Releases et lancez <code>Auralloy.exe</code>.",
+    "Glissez deux morceaux ou plus dans la fenêtre.",
+    "Ouvrez <b>Forge</b> et appuyez sur l'orbe : les morceaux s'enchaînent.",
+    "Éditez sur la timeline, choisissez un look, puis <b>Exportez</b>."
+  ],
+  "rules_intro": "Forge suit des règles explicites et écrit un journal en langage clair de chaque décision.",
+  "rules": [
+    "Un tempo commun, avec le moins d'étirement temporel possible.",
+    "Une tonalité commune (la mineur égale do majeur), avec le plus petit décalage de hauteur.",
+    "Chaque coupe sur un premier temps, en phrases de 4 mesures.",
+    "Une seule voix et une seule basse à la fois ; la basse change sur une barre de mesure.",
+    "Sections appariées par énergie ; fondus de 2 à 8 mesures.",
+    "Chaque morceau garde son équilibre et le niveau est homogénéisé."
+  ],
+  "tour": [
+    "Studio : ruban des morceaux, pistes par rôle, rack d'effets.",
+    "Forge : platines, matrice de compatibilité et plan.",
+    "Export : WAV, FLAC, MP3, normalisation, dither."
+  ],
+  "bench_intro": "À graine fixe, synthétique et reproductible (voir benchmarks/). La vraie musique sera plus complexe.",
+  "bench_labels": [
+    "Tempo à 0,5 % près",
+    "Tonalité exacte ou relative",
+    "Premier temps à 50 ms près",
+    "Limites de sections (F1)",
+    "Respect des règles",
+    "Erreur de tempo après rendu",
+    "Dérive de tempo face à un crossfade naïf"
+  ],
+  "limits": [
+    "Suppose un tempo 4/4 à peu près stable.",
+    "Quick Stems est du DSP classique, pas un séparateur neuronal.",
+    "La détection de tonalité peut se tromper sur une harmonie ambiguë.",
+    "Validé sur des morceaux synthétiques ; la vraie musique demande plus de tests."
+  ],
+  "paper": "Un preprint de recherche décrivant la méthode et son évaluation est préparé pour Zenodo. Il n'a pas été évalué par des pairs.",
+  "license": "AGPL-3.0 (construit sur JUCE).",
+  "rights": "Auralloy est un outil : vous êtes responsable des droits sur l'audio que vous importez.",
+  "more": "Les instructions de compilation, les raccourcis et la documentation technique sont dans le README anglais."
+}

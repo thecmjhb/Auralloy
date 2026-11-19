@@ -1,0 +1,80 @@
+{
+  "name": "Türkçe",
+  "dir": "ltr",
+  "tagline": "İki şarkı girer, tek bir alaşım çıkar.",
+  "subtitle": "Kural tabanlı otomatik mashup, slowed + reverb ve lofi için açık kaynaklı bir masaüstü stüdyo; gerçek bir zaman çizelgesi düzenleyicisiyle.",
+  "h_demo": "Çalışırken görün",
+  "h_what": "Neler yapar",
+  "h_how": "Nasıl çalışır",
+  "h_start": "Başlayın",
+  "h_rules": "Mashup kuralları",
+  "h_tour": "Panel turu",
+  "h_bench": "Kıyaslamalar",
+  "h_limits": "Dürüst sınırlamalar",
+  "h_paper": "Araştırma makalesi",
+  "h_license": "Lisans",
+  "demo_caption": "Giriş, içe aktarma, otomatik analiz, Forge, sıralı bir miks, tek tıkla Slowed + Reverb, dışa aktarma.",
+  "f_t": [
+    "Forge: otomatik mashup",
+    "Tasarımdan açıklanabilir",
+    "Studio: gerçek bir editör",
+    "Slowed + reverb ve lofi",
+    "Yüksek kaliteli dışa aktarma",
+    "Açık ve test edilmiş"
+  ],
+  "f_d": [
+    "İki veya daha fazla şarkı seçin. Auralloy tempo ve tonu eşler, şarkıları birbiri ardına, ritme oturtarak çalar ve her geçişte yumuşak bir harman yapar.",
+    "Her karar yazılı bir kurala uyar ve sade bir dille kaydedilir. Kara kutu yok.",
+    "Çok kanallı zaman çizelgesi: yakalama, bölme, kırpma, fade, ters çevirme, klip başına kazanç, tempo ve perde, döngü bölgeleri ve sınırsız geri alma.",
+    "Tek tıkla görünümler ve tam bir efekt rafı: EQ, lofi bant, kompresör, koro, eko, reverb, genişlik, yağmur ve plak çıtırtısı.",
+    "WAV 16/24/32 bit float, FLAC ve MP3; 44,1 ile 96 kHz arası, 32 bit float işleme.",
+    "AGPL-3.0, arayüzsüz testler, sabit tohumlu kıyaslama paketi ve bir araştırma ön baskısı."
+  ],
+  "how": [
+    "Tempo, vuruş, ölçü, ton ve bölümleri analiz et.",
+    "Stem'lere ayır: vokal, davul, bas, diğer.",
+    "Düzenlemeyi mashup kurallarıyla planla ve günlüğü yaz.",
+    "Her klibi eşleşmiş tempo ve perdeyle işle.",
+    "Düzenle: her şey zaman çizelgesinde sıradan bir klip."
+  ],
+  "start": [
+    "Releases sayfasından <b>Auralloy-0.0.1-windows-x64.zip</b> dosyasını indirip <code>Auralloy.exe</code> çalıştırın.",
+    "İki veya daha fazla şarkıyı pencereye bırakın.",
+    "<b>Forge</b>'u açıp küreye basın: şarkılar birbiri ardına çalar.",
+    "Zaman çizelgesinde düzenleyin, bir görünüm seçin, sonra <b>Dışa aktarın</b>."
+  ],
+  "rules_intro": "Forge açık kurallara uyar ve her kararın sade dille bir günlüğünü yazar.",
+  "rules": [
+    "Ortak tek bir tempo, en az zaman esnetmesiyle.",
+    "Ortak tek bir ton (la minör, do majöre eşittir), en küçük perde kaymasıyla.",
+    "Her kesim güçlü vuruşta, 4 ölçülük cümleler halinde.",
+    "Aynı anda tek vokal ve tek bas; bas ölçü çizgisinde değişir.",
+    "Bölümler enerjiye göre eşlenir; 2 ile 8 ölçülük geçişler.",
+    "Her şarkı kendi dengesini korur ve seviyeler eşitlenir."
+  ],
+  "tour": [
+    "Studio: şarkı şeridi, rol şeritleri, efekt rafı.",
+    "Forge: deck'ler, uyumluluk matrisi ve plan.",
+    "Dışa aktar: WAV, FLAC, MP3, normalize, dither."
+  ],
+  "bench_intro": "Sabit tohumlu, sentetik ve tekrarlanabilir (bkz. benchmarks/). Gerçek müzik daha karmaşık olacaktır.",
+  "bench_labels": [
+    "Tempo %0,5 içinde",
+    "Ton aynı ya da relatif",
+    "Güçlü vuruş 50 ms içinde",
+    "Bölüm sınırları (F1)",
+    "Kurallara uyum",
+    "Render sonrası tempo hatası",
+    "Basit crossfade'e karşı tempo kayması"
+  ],
+  "limits": [
+    "Çoğunlukla sabit bir 4/4 tempo varsayar.",
+    "Quick Stems klasik DSP'dir, sinirsel bir ayırıcı değildir.",
+    "Belirsiz armonide ton tespiti yanılabilir.",
+    "Sentetik şarkılarda doğrulandı; gerçek müzik daha fazla test gerektirir."
+  ],
+  "paper": "Yöntemi ve değerlendirmesini anlatan bir araştırma ön baskısı Zenodo için hazırlandı. Hakem değerlendirmesinden geçmemiştir.",
+  "license": "AGPL-3.0 (JUCE üzerine kurulu).",
+  "rights": "Auralloy bir araçtır: içe aktardığınız sesin haklarından siz sorumlusunuz.",
+  "more": "Derleme yönergeleri, kısayollar ve teknik belgeler İngilizce README'dedir."
+}

@@ -1,0 +1,80 @@
+{
+  "name": "Tiếng Việt",
+  "dir": "ltr",
+  "tagline": "Hai bài hát vào, một hợp kim ra.",
+  "subtitle": "Studio máy tính mã nguồn mở để tạo mashup tự động theo quy tắc, slowed + reverb và lofi, kèm trình chỉnh sửa timeline thực thụ.",
+  "h_demo": "Xem hoạt động",
+  "h_what": "Làm được gì",
+  "h_how": "Cách hoạt động",
+  "h_start": "Bắt đầu",
+  "h_rules": "Quy tắc mashup",
+  "h_tour": "Tham quan bảng điều khiển",
+  "h_bench": "Điểm chuẩn",
+  "h_limits": "Hạn chế một cách trung thực",
+  "h_paper": "Bài nghiên cứu",
+  "h_license": "Giấy phép",
+  "demo_caption": "Mở đầu, nhập bài, phân tích tự động, Forge, bản mix nối tiếp, Slowed + Reverb một cú nhấp, xuất file.",
+  "f_t": [
+    "Forge: mashup tự động",
+    "Giải thích được ngay từ thiết kế",
+    "Studio: trình chỉnh sửa thực thụ",
+    "Slowed + reverb và lofi",
+    "Xuất chất lượng cao",
+    "Mở và đã kiểm thử"
+  ],
+  "f_d": [
+    "Chọn hai bài hát trở lên. Auralloy khớp nhịp độ và giọng, rồi phát lần lượt từng bài, khớp nhịp, với chuyển tiếp mượt ở mỗi lần đổi bài.",
+    "Mỗi quyết định theo một quy tắc bằng văn bản và được ghi lại bằng ngôn ngữ dễ hiểu. Không có hộp đen.",
+    "Timeline nhiều track với bắt dính, cắt, tỉa, fade, đảo ngược, gain từng clip, nhịp độ và cao độ, vùng lặp và hoàn tác không giới hạn.",
+    "Kiểu âm thanh một cú nhấp và giàn hiệu ứng đầy đủ: EQ, băng lofi, compressor, chorus, echo, reverb, độ rộng, tiếng mưa và đĩa than.",
+    "WAV 16/24/32-bit float, FLAC và MP3 từ 44,1 đến 96 kHz, xử lý bằng 32-bit float.",
+    "AGPL-3.0, kiểm thử không giao diện, bộ benchmark có seed cố định và bản preprint nghiên cứu."
+  ],
+  "how": [
+    "Phân tích nhịp độ, nhịp, ô nhịp, giọng và các đoạn.",
+    "Tách stem: giọng hát, trống, bass, còn lại.",
+    "Lập kế hoạch phối theo quy tắc mashup và ghi nhật ký.",
+    "Render từng clip với nhịp độ và cao độ đã khớp.",
+    "Chỉnh sửa: mọi thứ đều là clip bình thường trên timeline."
+  ],
+  "start": [
+    "Tải <b>Auralloy-0.0.1-windows-x64.zip</b> từ Releases rồi chạy <code>Auralloy.exe</code>.",
+    "Kéo thả hai bài hát trở lên vào cửa sổ.",
+    "Mở <b>Forge</b> và bấm vào quả cầu: các bài hát phát nối tiếp nhau.",
+    "Chỉnh sửa trên timeline, chọn một kiểu, rồi <b>Export</b>."
+  ],
+  "rules_intro": "Forge tuân theo các quy tắc rõ ràng và ghi nhật ký bằng ngôn ngữ dễ hiểu cho mọi quyết định.",
+  "rules": [
+    "Một nhịp độ chung, kéo giãn thời gian ít nhất.",
+    "Một giọng chung (La thứ tương đương Đô trưởng), dịch cao độ nhỏ nhất.",
+    "Mọi điểm cắt rơi vào phách mạnh, theo cụm 4 ô nhịp.",
+    "Mỗi lúc chỉ một giọng hát và một bass; bass đổi ở vạch ô nhịp.",
+    "Ghép đoạn theo năng lượng; chuyển tiếp từ 2 đến 8 ô nhịp.",
+    "Mỗi bài giữ cân bằng riêng và độ to được làm đều."
+  ],
+  "tour": [
+    "Studio: dải bài hát, làn theo vai trò, giàn hiệu ứng.",
+    "Forge: deck, ma trận tương thích và kế hoạch.",
+    "Export: WAV, FLAC, MP3, chuẩn hóa, dither."
+  ],
+  "bench_intro": "Có seed cố định, tổng hợp và tái lập được (xem benchmarks/). Nhạc thật sẽ phức tạp hơn.",
+  "bench_labels": [
+    "Nhịp độ trong 0,5 %",
+    "Giọng đúng hoặc giọng song song",
+    "Phách mạnh trong 50 ms",
+    "Ranh giới đoạn (F1)",
+    "Tuân thủ quy tắc",
+    "Sai số nhịp độ sau khi render",
+    "Trôi nhịp so với crossfade đơn giản"
+  ],
+  "limits": [
+    "Giả định nhịp 4/4 khá ổn định.",
+    "Quick Stems là DSP cổ điển, không phải bộ tách bằng mạng nơ-ron.",
+    "Phát hiện giọng có thể sai khi hòa âm mơ hồ.",
+    "Đã kiểm chứng trên bài tổng hợp; nhạc thật cần thử nghiệm thêm."
+  ],
+  "paper": "Một bản preprint nghiên cứu mô tả phương pháp và đánh giá đã được chuẩn bị cho Zenodo. Chưa qua bình duyệt.",
+  "license": "AGPL-3.0 (xây dựng trên JUCE).",
+  "rights": "Auralloy là một công cụ: bạn chịu trách nhiệm về bản quyền của âm thanh bạn nhập vào.",
+  "more": "Hướng dẫn build, phím tắt và tài liệu kỹ thuật có trong README tiếng Anh."
+}

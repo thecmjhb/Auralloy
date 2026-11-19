@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use Auralloy in research, please cite the software and the preprint."
+type: software
+title: "Auralloy: Rule-Grounded, Explainable Multi-Song Mashup Generation with an Editable Stem Timeline"
+abstract: >-
+  Auralloy is an open-source desktop studio for rule-based automatic mashups
+  (sequential and layered), slowed + reverb and lofi, with a multi-track
+  timeline editor. Every arrangement decision follows a written rule and is
+  logged in plain language.
+version: 0.0.1
+date-released: "2026-11-20"
+license: AGPL-3.0-only
+repository-code: "https://github.com/thecmjhb/Auralloy"
+url: "https://github.com/thecmjhb/Auralloy"
+authors:
+  - family-names: "Hossain Bappy"
+    given-names: "C. M. Jubayer"
+keywords:
+  - music information retrieval
+  - mashup
+  - beat tracking
+  - key detection
+  - time-stretching
+  - audio effects
+  - JUCE
+  - explainable

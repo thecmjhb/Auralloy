@@ -1,0 +1,20 @@
+name: Bug report
+description: Something does not work as expected
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes: { label: Auralloy version, placeholder: "0.0.1" }
+    validations: { required: true }
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect?
+      description: For audio problems give the BPM and key you expected. Do not attach copyrighted recordings.
+    validations: { required: true }
+  - type: textarea
+    id: steps
+    attributes: { label: Steps to reproduce }
+  - type: input
+    id: os
+    attributes: { label: Windows version and audio device }

@@ -1,0 +1,31 @@
+name: build
+on:
+  push:
+  pull_request:
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure
+        run: cmake -B build -G "Visual Studio 17 2022" -A x64 -DAURALLOY_TESTS=ON
+      - name: Build app and tests
+        run: cmake --build build --config Release --target Auralloy AnalysisTest StemsTest MashupTest TimelineTest
+      - name: Engine tests (pure C++, no audio device needed)
+        run: ctest --test-dir build -C Release -R "Analysis|Stems|Mashup|Timeline" --output-on-failure
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Auralloy-windows
+          path: build/Auralloy_artefacts/Release/Auralloy.exe
+
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: README files are up to date with the locale JSONs
+        run: |
+          python tools/readmes.py
+          git diff --exit-code -- README.md README.bn.md docs/i18n

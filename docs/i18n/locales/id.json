@@ -73,7 +73,7 @@
     "Deteksi nada dasar bisa keliru pada harmoni yang ambigu.",
     "Divalidasi pada lagu sintetis; musik asli perlu pengujian lebih lanjut."
   ],
-  "paper": "Preprint penelitian yang menjelaskan metode dan evaluasinya disiapkan untuk Zenodo. Belum ditinjau sejawat.",
+  "paper": "Preprint penelitian yang menjelaskan metode dan evaluasinya diterbitkan di Zenodo. Belum ditinjau sejawat.",
   "license": "AGPL-3.0 (dibangun di atas JUCE).",
   "rights": "Auralloy adalah alat: Anda bertanggung jawab atas hak audio yang Anda impor.",
   "more": "Petunjuk build, pintasan, dan dokumentasi teknis ada di README bahasa Inggris."

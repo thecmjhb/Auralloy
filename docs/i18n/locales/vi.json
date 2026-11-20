@@ -73,7 +73,7 @@
     "Phát hiện giọng có thể sai khi hòa âm mơ hồ.",
     "Đã kiểm chứng trên bài tổng hợp; nhạc thật cần thử nghiệm thêm."
   ],
-  "paper": "Một bản preprint nghiên cứu mô tả phương pháp và đánh giá đã được chuẩn bị cho Zenodo. Chưa qua bình duyệt.",
+  "paper": "Bản preprint nghiên cứu mô tả phương pháp và đánh giá đã được đăng trên Zenodo. Chưa qua bình duyệt.",
   "license": "AGPL-3.0 (xây dựng trên JUCE).",
   "rights": "Auralloy là một công cụ: bạn chịu trách nhiệm về bản quyền của âm thanh bạn nhập vào.",
   "more": "Hướng dẫn build, phím tắt và tài liệu kỹ thuật có trong README tiếng Anh."

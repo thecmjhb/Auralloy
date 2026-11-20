@@ -9,7 +9,7 @@
     <img src="https://img.shields.io/badge/C%2B%2B-17-ff6fb5?style=flat-square" alt="C++17">
     <img src="https://img.shields.io/badge/License-AGPL--3.0-22c55e?style=flat-square" alt="AGPL-3.0">
     <img src="https://img.shields.io/badge/Documentation-20_languages-ffc857?style=flat-square" alt="20 languages">
-    <img src="https://img.shields.io/badge/Paper-Preprint-2563eb?style=flat-square" alt="Preprint">
+    <a href="https://doi.org/10.5281/zenodo.24391795"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.24391795.svg" alt="DOI 10.5281/zenodo.24391795"></a>
   </p>
   <p><a href="#demo">실제 동작 보기</a> · <a href="#what">기능</a> · <a href="#start">시작하기</a> · <a href="#rules">매시업 규칙</a> · <a href="#bench">벤치마크</a> · <a href="#paper">연구 논문</a></p>
 </div>
@@ -112,12 +112,32 @@ Forge는 명시적 규칙을 따르며 모든 결정을 쉬운 말로 기록합�
 
 ## 📄 연구 논문
 
-<p align="center"><a href="../../paper/Auralloy-preprint.pdf"><img src="https://img.shields.io/badge/Read_the_preprint-PDF-2563eb?style=for-the-badge" alt="Preprint"></a></p>
+<p align="center"><a href="https://doi.org/10.5281/zenodo.24391795"><img src="https://img.shields.io/badge/Zenodo-10.5281%2Fzenodo.24391795-2563eb?style=for-the-badge" alt="Zenodo DOI"></a> <a href="../../paper/Auralloy-preprint.pdf"><img src="https://img.shields.io/badge/Read_the_preprint-PDF-2563eb?style=for-the-badge" alt="Preprint PDF"></a></p>
 
 **Auralloy: Rule-Grounded, Explainable Multi-Song Mashup Generation with an Editable Stem Timeline**  
-C. M. Jubayer Hossain Bappy · 2026
+C. M. Jubayer Hossain Bappy · 2026 · [10.5281/zenodo.24391795](https://doi.org/10.5281/zenodo.24391795)
 
-방법과 평가를 설명하는 연구 프리프린트를 Zenodo용으로 준비했습니다. 동료 심사를 거치지 않았습니다.
+방법과 평가를 설명하는 연구 프리프린트가 Zenodo에 게시되어 있습니다. 동료 심사를 거치지 않았습니다.
+
+<details>
+<summary><b>BibTeX</b></summary>
+
+```bibtex
+@misc{bappy2026auralloy,
+  author    = {Hossain Bappy, C. M. Jubayer},
+  title     = {Auralloy: Rule-Grounded, Explainable Multi-Song Mashup Generation with an Editable Stem Timeline},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.24391795},
+  url       = {https://doi.org/10.5281/zenodo.24391795}
+}
+```
+
+GitHub also shows a *Cite this repository* button (from `CITATION.cff`).
+
+</details>
+
+[CONTRIBUTING](../../CONTRIBUTING.md) · [CHANGELOG](../../CHANGELOG.md) · [SECURITY](../../SECURITY.md)
 
 ## ⚖️ 라이선스
 

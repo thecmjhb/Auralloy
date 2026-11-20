@@ -73,7 +73,7 @@
     "Key detection can be wrong on ambiguous harmony.",
     "Validated on synthetic songs; real music needs more testing."
   ],
-  "paper": "A research preprint describing the method and its evaluation is prepared for Zenodo. It has not been peer reviewed.",
+  "paper": "A research preprint describing the method and its evaluation is published on Zenodo. It has not been peer reviewed.",
   "license": "AGPL-3.0 (built on JUCE).",
   "rights": "Auralloy is a tool: you are responsible for the rights to the audio you import.",
   "more": "Build instructions, shortcuts and technical docs are in the English README."

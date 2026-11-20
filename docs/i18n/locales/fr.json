@@ -73,7 +73,7 @@
     "La détection de tonalité peut se tromper sur une harmonie ambiguë.",
     "Validé sur des morceaux synthétiques ; la vraie musique demande plus de tests."
   ],
-  "paper": "Un preprint de recherche décrivant la méthode et son évaluation est préparé pour Zenodo. Il n'a pas été évalué par des pairs.",
+  "paper": "Un preprint de recherche décrivant la méthode et son évaluation est publié sur Zenodo. Il n'a pas été évalué par des pairs.",
   "license": "AGPL-3.0 (construit sur JUCE).",
   "rights": "Auralloy est un outil : vous êtes responsable des droits sur l'audio que vous importez.",
   "more": "Les instructions de compilation, les raccourcis et la documentation technique sont dans le README anglais."

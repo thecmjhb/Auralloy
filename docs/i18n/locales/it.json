@@ -73,7 +73,7 @@
     "Il rilevamento della tonalità può sbagliare con armonie ambigue.",
     "Validato su brani sintetici; la musica reale richiede più test."
   ],
-  "paper": "Un preprint di ricerca che descrive il metodo e la valutazione è pronto per Zenodo. Non è stato sottoposto a revisione paritaria.",
+  "paper": "Un preprint di ricerca che descrive il metodo e la valutazione è pubblicato su Zenodo. Non è stato sottoposto a revisione paritaria.",
   "license": "AGPL-3.0 (costruito su JUCE).",
   "rights": "Auralloy è uno strumento: sei responsabile dei diritti sull'audio che importi.",
   "more": "Istruzioni di compilazione, scorciatoie e documentazione tecnica sono nel README in inglese."

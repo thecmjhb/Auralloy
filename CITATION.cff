@@ -10,6 +10,7 @@ abstract: >-
 version: 0.0.1
 date-released: "2026-11-20"
 license: AGPL-3.0-only
+doi: 10.5281/zenodo.24391795
 repository-code: "https://github.com/thecmjhb/Auralloy"
 url: "https://github.com/thecmjhb/Auralloy"
 authors:
@@ -24,3 +25,15 @@ keywords:
   - audio effects
   - JUCE
   - explainable
+preferred-citation:
+  type: generic
+  authors:
+    - family-names: "Hossain Bappy"
+      given-names: "C. M. Jubayer"
+  title: "Auralloy: Rule-Grounded, Explainable Multi-Song Mashup Generation with an Editable Stem Timeline"
+  year: 2026
+  doi: 10.5281/zenodo.24391795
+  url: "https://doi.org/10.5281/zenodo.24391795"
+  publisher:
+    name: Zenodo
+  notes: "Preprint, not peer reviewed"

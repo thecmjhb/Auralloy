@@ -9,7 +9,7 @@
     <img src="https://img.shields.io/badge/C%2B%2B-17-ff6fb5?style=flat-square" alt="C++17">
     <img src="https://img.shields.io/badge/License-AGPL--3.0-22c55e?style=flat-square" alt="AGPL-3.0">
     <img src="https://img.shields.io/badge/Documentation-20_languages-ffc857?style=flat-square" alt="20 languages">
-    <img src="https://img.shields.io/badge/Paper-Preprint-2563eb?style=flat-square" alt="Preprint">
+    <a href="https://doi.org/10.5281/zenodo.24391795"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.24391795.svg" alt="DOI 10.5281/zenodo.24391795"></a>
   </p>
   <p><a href="#demo">চলমান অবস্থায় দেখুন</a> · <a href="#what">এটি কী করে</a> · <a href="#start">শুরু করুন</a> · <a href="#rules">ম্যাশআপের নিয়ম</a> · <a href="#bench">বেঞ্চমার্ক</a> · <a href="#paper">গবেষণাপত্র</a></p>
 </div>
@@ -112,12 +112,32 @@ Forge স্পষ্ট নিয়ম মেনে চলে এবং প্
 
 ## 📄 গবেষণাপত্র
 
-<p align="center"><a href="paper/Auralloy-preprint.pdf"><img src="https://img.shields.io/badge/Read_the_preprint-PDF-2563eb?style=for-the-badge" alt="Preprint"></a></p>
+<p align="center"><a href="https://doi.org/10.5281/zenodo.24391795"><img src="https://img.shields.io/badge/Zenodo-10.5281%2Fzenodo.24391795-2563eb?style=for-the-badge" alt="Zenodo DOI"></a> <a href="paper/Auralloy-preprint.pdf"><img src="https://img.shields.io/badge/Read_the_preprint-PDF-2563eb?style=for-the-badge" alt="Preprint PDF"></a></p>
 
 **Auralloy: Rule-Grounded, Explainable Multi-Song Mashup Generation with an Editable Stem Timeline**  
-C. M. Jubayer Hossain Bappy · 2026
+C. M. Jubayer Hossain Bappy · 2026 · [10.5281/zenodo.24391795](https://doi.org/10.5281/zenodo.24391795)
 
-পদ্ধতি ও মূল্যায়নের গবেষণা প্রিপ্রিন্ট Zenodo-র জন্য তৈরি। এটি পিয়ার রিভিউ করা হয়নি।
+পদ্ধতি ও মূল্যায়নের গবেষণা প্রিপ্রিন্ট Zenodo-তে প্রকাশিত। এটি পিয়ার রিভিউ করা হয়নি।
+
+<details>
+<summary><b>BibTeX</b></summary>
+
+```bibtex
+@misc{bappy2026auralloy,
+  author    = {Hossain Bappy, C. M. Jubayer},
+  title     = {Auralloy: Rule-Grounded, Explainable Multi-Song Mashup Generation with an Editable Stem Timeline},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.24391795},
+  url       = {https://doi.org/10.5281/zenodo.24391795}
+}
+```
+
+GitHub also shows a *Cite this repository* button (from `CITATION.cff`).
+
+</details>
+
+[CONTRIBUTING](CONTRIBUTING.md) · [CHANGELOG](CHANGELOG.md) · [SECURITY](SECURITY.md)
 
 ## ⚖️ লাইসেন্স
 

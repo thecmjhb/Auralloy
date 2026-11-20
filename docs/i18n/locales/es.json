@@ -73,7 +73,7 @@
     "La detección de tonalidad puede fallar con armonía ambigua.",
     "Validado con canciones sintéticas; la música real necesita más pruebas."
   ],
-  "paper": "Un preprint de investigación que describe el método y su evaluación está preparado para Zenodo. No ha sido revisado por pares.",
+  "paper": "Un preprint de investigación que describe el método y su evaluación está publicado en Zenodo. No ha sido revisado por pares.",
   "license": "AGPL-3.0 (construido sobre JUCE).",
   "rights": "Auralloy es una herramienta: eres responsable de los derechos del audio que importas.",
   "more": "Las instrucciones de compilación, los atajos y la documentación técnica están en el README en inglés."

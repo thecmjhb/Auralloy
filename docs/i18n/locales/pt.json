@@ -73,7 +73,7 @@
     "A detecção de tom pode errar com harmonia ambígua.",
     "Validado em músicas sintéticas; música real precisa de mais testes."
   ],
-  "paper": "Um preprint de pesquisa que descreve o método e sua avaliação está preparado para o Zenodo. Não foi revisado por pares.",
+  "paper": "Um preprint de pesquisa que descreve o método e sua avaliação está publicado no Zenodo. Não foi revisado por pares.",
   "license": "AGPL-3.0 (construído sobre o JUCE).",
   "rights": "O Auralloy é uma ferramenta: você é responsável pelos direitos do áudio que importa.",
   "more": "Instruções de compilação, atalhos e documentação técnica estão no README em inglês."

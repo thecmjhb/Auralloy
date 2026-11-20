@@ -6,6 +6,8 @@ import json, os, html
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LOC = os.path.join(ROOT, "docs", "i18n", "locales")
 VERSION = "0.0.1"
+DOI = "10.5281/zenodo.24391795"
+DOI_URL = "https://doi.org/" + DOI
 
 ORDER = ["en", "bn", "zh-CN", "hi", "es", "ar", "fr", "pt", "id", "ur", "ru", "ko", "ja", "de", "tr", "it", "fa", "vi", "ta", "te"]
 
@@ -56,7 +58,7 @@ def render(code, locs, bench, from_root):
     out.append('    <img src="https://img.shields.io/badge/C%2B%2B-17-ff6fb5?style=flat-square" alt="C++17">')
     out.append('    <img src="https://img.shields.io/badge/License-AGPL--3.0-22c55e?style=flat-square" alt="AGPL-3.0">')
     out.append('    <img src="https://img.shields.io/badge/Documentation-20_languages-ffc857?style=flat-square" alt="20 languages">')
-    out.append('    <img src="https://img.shields.io/badge/Paper-Preprint-2563eb?style=flat-square" alt="Preprint">')
+    out.append(f'    <a href="{DOI_URL}"><img src="https://zenodo.org/badge/DOI/{DOI}.svg" alt="DOI {DOI}"></a>')
     out.append("  </p>")
     nav = [("demo", L["h_demo"]), ("what", L["h_what"]), ("start", L["h_start"]), ("rules", L["h_rules"]), ("bench", L["h_bench"]), ("paper", L["h_paper"])]
     out.append("  <p>" + " · ".join(f'<a href="#{a}">{esc(t)}</a>' for a, t in nav) + "</p>")
@@ -130,9 +132,31 @@ def render(code, locs, bench, from_root):
     out.append("")
 
     out.append(f'<a id="paper"></a>\n\n## 📄 {L["h_paper"]}\n')
-    out.append(f'<p align="center"><a href="{pre}paper/Auralloy-preprint.pdf"><img src="https://img.shields.io/badge/Read_the_preprint-PDF-2563eb?style=for-the-badge" alt="Preprint"></a></p>\n')
-    out.append(f"**Auralloy: Rule-Grounded, Explainable Multi-Song Mashup Generation with an Editable Stem Timeline**  \nC. M. Jubayer Hossain Bappy · 2026\n")
+    out.append(f'<p align="center"><a href="{DOI_URL}"><img src="https://img.shields.io/badge/Zenodo-10.5281%2Fzenodo.24391795-2563eb?style=for-the-badge" alt="Zenodo DOI"></a> <a href="{pre}paper/Auralloy-preprint.pdf"><img src="https://img.shields.io/badge/Read_the_preprint-PDF-2563eb?style=for-the-badge" alt="Preprint PDF"></a></p>\n')
+    out.append(f"**Auralloy: Rule-Grounded, Explainable Multi-Song Mashup Generation with an Editable Stem Timeline**  \nC. M. Jubayer Hossain Bappy · 2026 · [{DOI}]({DOI_URL})\n")
     out.append(L["paper"] + "\n")
+    out.append("<details>\n<summary><b>BibTeX</b></summary>\n")
+    out.append("```bibtex\n@misc{bappy2026auralloy,\n  author    = {Hossain Bappy, C. M. Jubayer},\n  title     = {Auralloy: Rule-Grounded, Explainable Multi-Song Mashup Generation with an Editable Stem Timeline},\n  year      = {2026},\n  publisher = {Zenodo},\n  doi       = {" + DOI + "},\n  url       = {" + DOI_URL + "}\n}\n```\n")
+    out.append("GitHub also shows a *Cite this repository* button (from `CITATION.cff`).\n")
+    out.append("</details>\n")
+    if code == "en":
+        out.append('<a id="faq"></a>\n\n## ❓ FAQ\n')
+        faq = [
+            ("How many songs do I need?", "At least two, and there is no upper limit. Songs whose tempo is more than 15 % away from the shared target, or whose key needs more than 3 semitones of shift, are left out, and the log tells you which and why."),
+            ("Is there AI or a cloud service involved?", "No. Auralloy is classic signal processing plus written rules. It runs locally, needs no GPU and makes no network connections."),
+            ("How good is the stem separation?", "Quick Stems is a lightweight DSP separator: decent for a centred lead vocal and bass, weak for drums. A neural separator can replace it behind one function. See the benchmark numbers above."),
+            ("Will it work on my real music?", "It was validated on synthetic songs only; real recordings are harder (see *Honest limitations*). Please report what goes wrong with an issue."),
+            ("Which platforms are supported?", "The release is Windows x64. The code is portable C++17 on JUCE, but macOS and Linux builds are untested."),
+            ("Can I mash up copyrighted songs?", "Auralloy is a tool. You are responsible for the rights to the audio you import and for what you publish."),
+        ]
+        for q, ans in faq:
+            out.append(f"<details>\n<summary><b>{q}</b></summary>\n\n{ans}\n\n</details>\n")
+        out.append("## 🗺️ Roadmap\n")
+        for r in ["A listening study on real music (with permission)", "Pluggable neural stem separator behind `separateStems()`", "Tempo-varying beat tracking and a downbeat model that is robust at fast tempos", "macOS and Linux builds, signed Windows installer", "More one-click looks and a batch mode"]:
+            out.append(f"- [ ] {r}")
+        out.append("\nIdeas and bug reports are welcome: see [CONTRIBUTING.md](CONTRIBUTING.md).\n")
+    else:
+        out.append(f"[CONTRIBUTING]({pre}CONTRIBUTING.md) · [CHANGELOG]({pre}CHANGELOG.md) · [SECURITY]({pre}SECURITY.md)\n")
     out.append(f'## ⚖️ {L["h_license"]}\n')
     out.append(f"{L['license']} {L['rights']}\n")
     out.append(wrap_close)

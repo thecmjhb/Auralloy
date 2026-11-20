@@ -9,7 +9,7 @@
     <img src="https://img.shields.io/badge/C%2B%2B-17-ff6fb5?style=flat-square" alt="C++17">
     <img src="https://img.shields.io/badge/License-AGPL--3.0-22c55e?style=flat-square" alt="AGPL-3.0">
     <img src="https://img.shields.io/badge/Documentation-20_languages-ffc857?style=flat-square" alt="20 languages">
-    <img src="https://img.shields.io/badge/Paper-Preprint-2563eb?style=flat-square" alt="Preprint">
+    <a href="https://doi.org/10.5281/zenodo.24391795"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.24391795.svg" alt="DOI 10.5281/zenodo.24391795"></a>
   </p>
   <p><a href="#demo">در عمل ببینید</a> · <a href="#what">چه کاری انجام می‌دهد</a> · <a href="#start">شروع کنید</a> · <a href="#rules">قواعد مشاپ</a> · <a href="#bench">بنچمارک</a> · <a href="#paper">مقاله پژوهشی</a></p>
 </div>
@@ -113,12 +113,32 @@ Forge از قواعد صریح پیروی می‌کند و برای هر تصم�
 
 ## 📄 مقاله پژوهشی
 
-<p align="center"><a href="../../paper/Auralloy-preprint.pdf"><img src="https://img.shields.io/badge/Read_the_preprint-PDF-2563eb?style=for-the-badge" alt="Preprint"></a></p>
+<p align="center"><a href="https://doi.org/10.5281/zenodo.24391795"><img src="https://img.shields.io/badge/Zenodo-10.5281%2Fzenodo.24391795-2563eb?style=for-the-badge" alt="Zenodo DOI"></a> <a href="../../paper/Auralloy-preprint.pdf"><img src="https://img.shields.io/badge/Read_the_preprint-PDF-2563eb?style=for-the-badge" alt="Preprint PDF"></a></p>
 
 **Auralloy: Rule-Grounded, Explainable Multi-Song Mashup Generation with an Editable Stem Timeline**  
-C. M. Jubayer Hossain Bappy · 2026
+C. M. Jubayer Hossain Bappy · 2026 · [10.5281/zenodo.24391795](https://doi.org/10.5281/zenodo.24391795)
 
-پیش‌چاپ پژوهشی که روش و ارزیابی را شرح می‌دهد برای Zenodo آماده شده است. داوری همتا نشده است.
+پیش‌چاپ پژوهشی که روش و ارزیابی را شرح می‌دهد در Zenodo منتشر شده است. داوری همتا نشده است.
+
+<details>
+<summary><b>BibTeX</b></summary>
+
+```bibtex
+@misc{bappy2026auralloy,
+  author    = {Hossain Bappy, C. M. Jubayer},
+  title     = {Auralloy: Rule-Grounded, Explainable Multi-Song Mashup Generation with an Editable Stem Timeline},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.24391795},
+  url       = {https://doi.org/10.5281/zenodo.24391795}
+}
+```
+
+GitHub also shows a *Cite this repository* button (from `CITATION.cff`).
+
+</details>
+
+[CONTRIBUTING](../../CONTRIBUTING.md) · [CHANGELOG](../../CHANGELOG.md) · [SECURITY](../../SECURITY.md)
 
 ## ⚖️ مجوز
 

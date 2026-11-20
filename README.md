@@ -9,7 +9,7 @@
     <img src="https://img.shields.io/badge/C%2B%2B-17-ff6fb5?style=flat-square" alt="C++17">
     <img src="https://img.shields.io/badge/License-AGPL--3.0-22c55e?style=flat-square" alt="AGPL-3.0">
     <img src="https://img.shields.io/badge/Documentation-20_languages-ffc857?style=flat-square" alt="20 languages">
-    <img src="https://img.shields.io/badge/Paper-Preprint-2563eb?style=flat-square" alt="Preprint">
+    <a href="https://doi.org/10.5281/zenodo.24391795"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.24391795.svg" alt="DOI 10.5281/zenodo.24391795"></a>
   </p>
   <p><a href="#demo">See it in action</a> · <a href="#what">What it does</a> · <a href="#start">Get started</a> · <a href="#rules">The mashup rules</a> · <a href="#bench">Benchmarks</a> · <a href="#paper">Research paper</a></p>
 </div>
@@ -135,12 +135,86 @@ Seeded, synthetic and reproducible (see benchmarks/). Real music will be messier
 
 ## 📄 Research paper
 
-<p align="center"><a href="paper/Auralloy-preprint.pdf"><img src="https://img.shields.io/badge/Read_the_preprint-PDF-2563eb?style=for-the-badge" alt="Preprint"></a></p>
+<p align="center"><a href="https://doi.org/10.5281/zenodo.24391795"><img src="https://img.shields.io/badge/Zenodo-10.5281%2Fzenodo.24391795-2563eb?style=for-the-badge" alt="Zenodo DOI"></a> <a href="paper/Auralloy-preprint.pdf"><img src="https://img.shields.io/badge/Read_the_preprint-PDF-2563eb?style=for-the-badge" alt="Preprint PDF"></a></p>
 
 **Auralloy: Rule-Grounded, Explainable Multi-Song Mashup Generation with an Editable Stem Timeline**  
-C. M. Jubayer Hossain Bappy · 2026
+C. M. Jubayer Hossain Bappy · 2026 · [10.5281/zenodo.24391795](https://doi.org/10.5281/zenodo.24391795)
 
-A research preprint describing the method and its evaluation is prepared for Zenodo. It has not been peer reviewed.
+A research preprint describing the method and its evaluation is published on Zenodo. It has not been peer reviewed.
+
+<details>
+<summary><b>BibTeX</b></summary>
+
+```bibtex
+@misc{bappy2026auralloy,
+  author    = {Hossain Bappy, C. M. Jubayer},
+  title     = {Auralloy: Rule-Grounded, Explainable Multi-Song Mashup Generation with an Editable Stem Timeline},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.24391795},
+  url       = {https://doi.org/10.5281/zenodo.24391795}
+}
+```
+
+GitHub also shows a *Cite this repository* button (from `CITATION.cff`).
+
+</details>
+
+<a id="faq"></a>
+
+## ❓ FAQ
+
+<details>
+<summary><b>How many songs do I need?</b></summary>
+
+At least two, and there is no upper limit. Songs whose tempo is more than 15 % away from the shared target, or whose key needs more than 3 semitones of shift, are left out, and the log tells you which and why.
+
+</details>
+
+<details>
+<summary><b>Is there AI or a cloud service involved?</b></summary>
+
+No. Auralloy is classic signal processing plus written rules. It runs locally, needs no GPU and makes no network connections.
+
+</details>
+
+<details>
+<summary><b>How good is the stem separation?</b></summary>
+
+Quick Stems is a lightweight DSP separator: decent for a centred lead vocal and bass, weak for drums. A neural separator can replace it behind one function. See the benchmark numbers above.
+
+</details>
+
+<details>
+<summary><b>Will it work on my real music?</b></summary>
+
+It was validated on synthetic songs only; real recordings are harder (see *Honest limitations*). Please report what goes wrong with an issue.
+
+</details>
+
+<details>
+<summary><b>Which platforms are supported?</b></summary>
+
+The release is Windows x64. The code is portable C++17 on JUCE, but macOS and Linux builds are untested.
+
+</details>
+
+<details>
+<summary><b>Can I mash up copyrighted songs?</b></summary>
+
+Auralloy is a tool. You are responsible for the rights to the audio you import and for what you publish.
+
+</details>
+
+## 🗺️ Roadmap
+
+- [ ] A listening study on real music (with permission)
+- [ ] Pluggable neural stem separator behind `separateStems()`
+- [ ] Tempo-varying beat tracking and a downbeat model that is robust at fast tempos
+- [ ] macOS and Linux builds, signed Windows installer
+- [ ] More one-click looks and a batch mode
+
+Ideas and bug reports are welcome: see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## ⚖️ License
 
